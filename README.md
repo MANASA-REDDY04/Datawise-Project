@@ -1,6 +1,6 @@
 # Datawise Dashboard — Internship Assessment
 
-This is a responsive dashboard UI developed using **React + Vite + TypeScript** as part of the **Frontend Developer Internship Assessment**.
+ Responsive dashboard UI developed using **React + Vite + TypeScript** as part of the **Frontend Developer Internship Assessment**.
 
 **Live Demo:** [https://dashboard-datawise.netlify.app/](https://dashboard-datawise.netlify.app/)
 
@@ -23,35 +23,20 @@ This is a responsive dashboard UI developed using **React + Vite + TypeScript** 
 
 ##  Screenshots
 
-###  Full Dashboard
 
 ![Dashboard View](./public/img1.png)
 
-###  Bar Chart Integration
-
 ![Bar Chart](./public/img2.png)
-
-###  User Table from Mock API
 
 ![User Table](./public/img3.png)
 
-###  Form with POST API
-
 ![Form Submission](./public/img4.png)
-
-###  Settings Page with Theme Toggle
 
 ![Settings](./public/img5.png)
 
-###  Dark Theme Preview
-
 ![Dark Theme](./public/img6.png)
 
-###  Mobile Sidebar View
-
 ![Mobile Sidebar](./public/img7.png)
-
-###  Mobile Dashboard Responsive View
 
 ![Mobile Dashboard](./public/img8.png)
 
