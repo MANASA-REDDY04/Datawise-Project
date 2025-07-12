@@ -2,6 +2,11 @@
 
  Responsive dashboard UI developed using **React + Vite + TypeScript** as part of the **Frontend Developer Internship Assessment**.
 
+ I have built this project using setting up by
+ ```
+npm create vite@latest
+```
+
 **Live Demo:** [https://dashboard-datawise.netlify.app/](https://dashboard-datawise.netlify.app/)
 
 **Mock API** [https://68708e6c7ca4d06b34b7282b.mockapi.io/users](https://68708e6c7ca4d06b34b7282b.mockapi.io/users)
