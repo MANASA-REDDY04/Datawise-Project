@@ -1,69 +1,85 @@
-# React + TypeScript + Vite
+# Datawise Dashboard — Internship Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive dashboard UI developed using **React + Vite + TypeScript** as part of the **Frontend Developer Internship Assessment**.
 
-Currently, two official plugins are available:
+**Live Demo:** [https://dashboard-datawise.netlify.app/](https://dashboard-datawise.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Mock API** [https://68708e6c7ca4d06b34b7282b.mockapi.io/users](https://68708e6c7ca4d06b34b7282b.mockapi.io/users)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+##  Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-  Sidebar with navigation — Dashboard, Users, Settings
+-  Bar chart showing mock analytics
+-  User table fetched using GET API from MockAPI.io
+-  Form with validation and POST API integration
+-  Theme toggle — Dark and Light mode
+-  React Router for navigation
+-  Axios for API requests
+-  Fully responsive on all screen sizes
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  Screenshots
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+###  Full Dashboard
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Dashboard View](./public/img1.png)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+###  Bar Chart Integration
+
+![Bar Chart](./public/img2.png)
+
+###  User Table from Mock API
+
+![User Table](./public/img3.png)
+
+###  Form with POST API
+
+![Form Submission](./public/img4.png)
+
+###  Settings Page with Theme Toggle
+
+![Settings](./public/img5.png)
+
+###  Dark Theme Preview
+
+![Dark Theme](./public/img6.png)
+
+###  Mobile Sidebar View
+
+![Mobile Sidebar](./public/img7.png)
+
+###  Mobile Dashboard Responsive View
+
+![Mobile Dashboard](./public/img8.png)
+
+---
+
+##  Tech Stack
+
+- **Frontend:** React + Vite
+- **Language:** TypeScript
+- **State Management:** Context API, useState
+- **Styling:** CSS Modules + Theme with CSS Variables
+- **Routing:** React Router v6
+- **Charting:** Recharts
+- **API Calls:** Axios
+- **Mock Data Source:** [MockAPI.io](https://mockapi.io)
+
+---
+
+##  How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/MANASA-REDDY04/Datawise-Project.git
+cd Datawise-Project
+
+# 2. Install dependencies
+npm install
+npm install requirements.txt
+
+# 3. Run the development server
+npm run dev
