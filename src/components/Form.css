@@ -1,0 +1,81 @@
+/* 💡 Form Wrapper */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--card-background, #f9f9f9);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  margin: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 📦 Field Grouping */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ✏️ Input Fields */
+.form-input,
+.file-input {
+  padding: 0.75rem;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--input-background, #fff);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.file-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-input::placeholder {
+  color: var(--placeholder, #888);
+}
+
+/* 📤 Submit Button */
+.submit-button {
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-hover, #0056b3);
+}
+
+/* ⚠️ Error Display */
+.error-text {
+  color: #e63946;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* ✅ Status Message */
+.status-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 0.5rem;
+}
+
+/* OR separator */
+.or-text {
+  text-align: center;
+  color: var(--text-secondary, #777);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}

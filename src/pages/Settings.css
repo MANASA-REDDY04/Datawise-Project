@@ -1,0 +1,207 @@
+/* ========== General Page Layout ========== */
+.settings-page {
+  padding: 2rem;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ========== Headings ========== */
+.settings-page h1,
+.settings-page h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-page h1 {
+  font-size: 1.8rem;
+  color: var(--primary); /* black/light mode */
+}
+
+body.dark .settings-page h1 {
+  color: #3b82f6; /* blue in dark mode */
+}
+
+.settings-page h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  color: var(--text);
+}
+
+/* ========== Profile Section ========== */
+.profile-section {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-section input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--input-background);
+  color: var(--text);
+  font-size: 1rem;
+  width: 100%;
+}
+
+.profile-section .avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+/* ========== Buttons ========== */
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-group button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-group button:hover {
+  opacity: 0.9;
+}
+
+.btn-group .danger {
+  background-color: #e11d48;
+}
+
+body.dark .btn-group button {
+  background-color: #1f2937;
+}
+
+body.dark .btn-group .danger {
+  background-color: #dc2626;
+}
+
+/* ========== Status Message ========== */
+.status {
+  font-size: 0.9rem;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+/* ========== Theme / Preferences Section ========== */
+.theme-section {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ========== Icon Toggle Layout ========== */
+.icon-toggle-group {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.8rem;
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon-label {
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.icon-click {
+  cursor: pointer;
+  color: var(--text);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+body.dark .icon-click {
+  color: #fff;
+}
+
+.icon-click:hover {
+  color: var(--primary);
+  transform: scale(1.1);
+}
+
+/* ========== Toggle Group (unused, fallback) ========== */
+.toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ========== Loading / Empty State ========== */
+.settings-loading,
+.settings-page p {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* ========== Add Profile Button ========== */
+.add-profile-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.add-profile-btn:hover {
+  background-color: var(--primary-hover);
+}
+/* Responsive button layout on small screens */
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-group button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .btn-group button + button {
+    margin-top: 0.5rem;
+  }
+}
