@@ -36,7 +36,7 @@ function Chart() {
 
   return (
     <div className="chart-container">
-      <h2 className="chart-title" style={{ color: colors.text }}>
+      <h2 className="chart-title" style={{ color: 'white' }}>
         Monthly User Visits
       </h2>
       <ResponsiveContainer width="100%" height={350}>
