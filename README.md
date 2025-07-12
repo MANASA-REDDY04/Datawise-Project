@@ -7,7 +7,37 @@
 **Mock API** [https://68708e6c7ca4d06b34b7282b.mockapi.io/users](https://68708e6c7ca4d06b34b7282b.mockapi.io/users)
 
 ---
+---
 
+##  Tech Stack
+
+- **Frontend:** React + Vite
+- **Language:** TypeScript
+- **State Management:** Context API, useState
+- **Styling:** CSS Modules + Theme with CSS Variables
+- **Routing:** React Router v6
+- **Charting:** Recharts
+- **API Calls:** Axios
+- **Mock Data Source:** [MockAPI.io](https://mockapi.io)
+
+---
+
+##  How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/MANASA-REDDY04/Datawise-Project.git
+cd Datawise-Project
+
+# 2. Install dependencies
+npm install
+npm install requirements.txt
+
+# 3. Run the development server
+npm run dev
+```
+
+---
 ##  Features
 
 -  Sidebar with navigation — Dashboard, Users, Settings
@@ -40,31 +70,4 @@
 
 ![Mobile Dashboard](./public/img8.png)
 
----
 
-##  Tech Stack
-
-- **Frontend:** React + Vite
-- **Language:** TypeScript
-- **State Management:** Context API, useState
-- **Styling:** CSS Modules + Theme with CSS Variables
-- **Routing:** React Router v6
-- **Charting:** Recharts
-- **API Calls:** Axios
-- **Mock Data Source:** [MockAPI.io](https://mockapi.io)
-
----
-
-##  How to Run Locally
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/MANASA-REDDY04/Datawise-Project.git
-cd Datawise-Project
-
-# 2. Install dependencies
-npm install
-npm install requirements.txt
-
-# 3. Run the development server
-npm run dev
