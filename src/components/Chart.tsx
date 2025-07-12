@@ -22,21 +22,31 @@ const data = [
 
 function Chart() {
   const [colors, setColors] = useState({
-    text: '#121212',
-    grid: '#ccc',
+    text: getComputedStyle(document.body).getPropertyValue('--text').trim(),
+    grid: getComputedStyle(document.body).getPropertyValue('--border').trim(),
   });
 
   useEffect(() => {
-    const style = getComputedStyle(document.body);
-    setColors({
-      text: style.getPropertyValue('--text').trim() || '#121212',
-      grid: style.getPropertyValue('--border').trim() || '#ccc',
-    });
+    const updateColors = () => {
+      const style = getComputedStyle(document.body);
+      setColors({
+        text: style.getPropertyValue('--text').trim(),
+        grid: style.getPropertyValue('--border').trim(),
+      });
+    };
+
+    updateColors(); // initial
+
+    // Observe theme class changes
+    const observer = new MutationObserver(updateColors);
+    observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div className="chart-container">
-      <h2 className="chart-title" style={{ color: 'white' }}>
+      <h2 className="chart-title" style={{ color: colors.text }}>
         Monthly User Visits
       </h2>
       <ResponsiveContainer width="100%" height={350}>
